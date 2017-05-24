@@ -6825,7 +6825,10 @@ body {
   top: 0; }
 
 .tabs-content.carousel .carousel-item {
-  height: 100vh;
+  height: 100vh !important;
   overflow-y: scroll; }
+
+.carousel-height .carousel {
+  height: 100vh !important; }
 
 /*# sourceMappingURL=materialize.css.map */

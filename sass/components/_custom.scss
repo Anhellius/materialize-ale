@@ -318,6 +318,11 @@ nav {
 //.tabs-content.carousel .carousel-item{ height: 100vh; overflow-x:hidden; overflow-y: scroll; } .tabs-content.carousel .carousel-item { width: 100%; height: 100vh; }
 
 .tabs-content.carousel .carousel-item {
-  height: 100vh;
+  height: 100vh !important;
   overflow-y: scroll;
+}
+.carousel-height{
+  .carousel{
+    height: 100vh !important;
+  }
 }
