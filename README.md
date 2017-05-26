@@ -6,5 +6,5 @@
 
 ## Changelog
 
-- v0.3 (April 22nd)
+- v0.3 (May 22nd)
   - Primera subida  GitHub
