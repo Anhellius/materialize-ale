@@ -208,13 +208,6 @@ nav {
     z-index: -2;
 }
 
-#home:target ~ #header #navigation #link-home,
-#portfolio:target ~ #header #navigation #link-portfolio,
-#about:target ~ #header #navigation #link-about,
-#contact:target ~ #header #navigation #link-contact{
-    background: #000;
-    color: #fff;
-}
 
 .element-1 {   
     position: absolute;
@@ -239,6 +232,14 @@ nav {
  /* shape-inside: circle(50%, 50%, 50%);
   -webkit-clip-path: circle(50%, 50%, 50%); */
   transition: all .5s ease;     
+  z-index: -1;
+}
+.element-1-change2 {
+  shape-inside: polygon(0 0,  0 0, 0 100%, 0 100%);
+  -webkit-clip-path: polygon(0 0,  0 0, 0 100%, 0 100%);
+  /* shape-inside: circle(50%, 50%, 50%);
+   -webkit-clip-path: circle(50%, 50%, 50%); */
+  transition: all .5s ease;
   z-index: -1;
 }
 
@@ -266,7 +267,16 @@ nav {
     z-index: -1;
     transition: all .5s ease;       
     background-color: #eceff1; 
-} 
+}
+.element-2-change2 {
+  shape-inside: polygon(100% 0,  0 0, 0 100%, 100% 100%);
+  -webkit-clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+  /* shape-inside: circle(50%, 50%, 50%);
+  -webkit-clip-path: circle(50%, 50%, 50%); */
+  z-index: -1;
+  transition: all .5s ease;
+  background-color: #eceff1;
+}
 
 
 .scrollText{

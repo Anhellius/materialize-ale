@@ -6743,13 +6743,6 @@ nav {
   height: 100%;
   z-index: -2; }
 
-#home:target ~ #header #navigation #link-home,
-#portfolio:target ~ #header #navigation #link-portfolio,
-#about:target ~ #header #navigation #link-about,
-#contact:target ~ #header #navigation #link-contact {
-  background: #000;
-  color: #fff; }
-
 .element-1 {
   position: absolute;
   top: 0;
@@ -6773,6 +6766,14 @@ nav {
   transition: all .5s ease;
   z-index: -1; }
 
+.element-1-change2 {
+  shape-inside: polygon(0 0, 0 0, 0 100%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+  /* shape-inside: circle(50%, 50%, 50%);
+   -webkit-clip-path: circle(50%, 50%, 50%); */
+  transition: all .5s ease;
+  z-index: -1; }
+
 .element-2 {
   position: absolute;
   top: 0;
@@ -6790,6 +6791,15 @@ nav {
 .element-2-change {
   shape-inside: polygon(100% 0, 41.4% 0, 41.4% 100%, 100% 100%);
   -webkit-clip-path: polygon(100% 0, 41.4% 0, 41.4% 100%, 100% 100%);
+  /* shape-inside: circle(50%, 50%, 50%);
+  -webkit-clip-path: circle(50%, 50%, 50%); */
+  z-index: -1;
+  transition: all .5s ease;
+  background-color: #eceff1; }
+
+.element-2-change2 {
+  shape-inside: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+  -webkit-clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
   /* shape-inside: circle(50%, 50%, 50%);
   -webkit-clip-path: circle(50%, 50%, 50%); */
   z-index: -1;

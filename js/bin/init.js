@@ -18,9 +18,10 @@
 	                 $(".active").removeClass("active");
 	                 if(id.lastIndexOf("/")!=-1)id="m-"+id.substring(id.lastIndexOf("/")+1,id.length);
 	                 $("#"+id).parent().addClass("active");
-                      $('ul.tabs').tabs(
+	                 $('ul.tabs').tabs(
                           { 'swipeable': true }
                       );
+	                 $('.materialboxed').materialbox();
 
 	           //       $( "#m-resume" ).on("click", function() {
 	           //       	//$(".activa-animacion-1").click(function() {
@@ -53,18 +54,33 @@
            if(funcion=="m-resume"){	                  
 						$('.activa-animacion-1').addClass('element-1-change');
 				        $('.activa-animacion-2').addClass('element-2-change');
+               			$('.blackText').removeClass('white-text');
 				        $('.blackText').addClass('black-text');
-				        $('.blackText').removeClass('white-text');
 				        Materialize.showStaggeredList('#staggered-test')
 				        Materialize.fadeInImage('#staggered-test2');
 				}else{
 						$('.activa-animacion-1').removeClass('element-1-change');
 				        $('.activa-animacion-2').removeClass('element-2-change');
+               			$('.activa-animacion-1').removeClass('element-1-change2');
+               			$('.activa-animacion-2').removeClass('element-2-change2');
 				        $('.blackText').removeClass('black-text');
 				        $('.blackText').addClass('white-text');
 				        Materialize.showStaggeredList('#staggered-test')
 				        Materialize.fadeInImage('#staggered-test2');				        
-           }	        
+           }
+			 if(funcion=="m-gallery"){
+                 $('.brand-logo > img').attr("src", "imagenes/icono-ale-large-black.svg");
+				 $('.activa-animacion-1').addClass('element-1-change2');
+				 $('.activa-animacion-2').addClass('element-2-change2');
+				 $('.blackText').addClass('black-text');
+				 $('.blackText').removeClass('white-text');
+			 }else{
+                 $('.brand-logo > img').attr("src", "imagenes/icono-ale-large.svg");
+				 $('.activa-animacion-1').removeClass('element-1-change2');
+				 $('.activa-animacion-2').removeClass('element-2-change2');
+				 $('.blackText').removeClass('black-text');
+				 $('.blackText').addClass('white-text');
+			 }
 
             if(funcion!="m-sistemas-encabezado" && funcion!="m-sistemas-contenido" && funcion!="m-sistemas-tablas"){
            		// $("#menuVertical, #barra, #color-scheme, #trama").removeClass();        
