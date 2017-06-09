@@ -22,21 +22,8 @@
                           { 'swipeable': true }
                       );
 	                 $('.materialboxed').materialbox();
+	                 $('.collapsible').collapsible();
 
-	           //       $( "#m-resume" ).on("click", function() {
-	           //       	//$(".activa-animacion-1").click(function() {
-				        // $('.element-1').toggleClass('element-1-change');
-				        // $('.element-2').toggleClass('element-2-change');
-				        // $('.blackText').addClass('black-text');
-				        // $('.blackText').removeClass('white-text');
-	           //       });
-	           //       $("#m-home").on("click", function() {
-	           //       	//$(".activa-animacion-1").click(function() {
-				        // $('.element-1-change').toggleClass('element-1-change-back');
-				        // $('.element-2-change').toggleClass('element-2-change-back');
-				        // $('.blackText').removeClass('black-text');
-				        // $('.blackText').addClass('white-text');
-	           //       });
 	                             			   
 	                 ejecutarAfter(id);
 	           	 },
@@ -51,35 +38,48 @@
            // $("#trama").addClass("trama-"+id2);
            var f2= funcion.substring(2,funcion.length);
 
-           if(funcion=="m-resume"){	                  
+
+         if(funcion=="m-home"){
+             $('.blackText').addClass('white-text');
+             $('.blackText').removeClass('black-text');
+             $('.whiteText').addClass('white-text');
+             $('.whiteText').removeClass('black-text');
+         }else{
+
+         }
+           if(funcion=="m-resume"){
 						$('.activa-animacion-1').addClass('element-1-change');
 				        $('.activa-animacion-2').addClass('element-2-change');
                			$('.blackText').removeClass('white-text');
 				        $('.blackText').addClass('black-text');
-				        Materialize.showStaggeredList('#staggered-test')
+					   $('.whiteText').addClass('white-text');
+					   $('.whiteText').removeClass('black-text');
+				        Materialize.showStaggeredList('#staggered-test');
 				        Materialize.fadeInImage('#staggered-test2');
 				}else{
 						$('.activa-animacion-1').removeClass('element-1-change');
 				        $('.activa-animacion-2').removeClass('element-2-change');
                			$('.activa-animacion-1').removeClass('element-1-change2');
                			$('.activa-animacion-2').removeClass('element-2-change2');
-				        $('.blackText').removeClass('black-text');
-				        $('.blackText').addClass('white-text');
-				        Materialize.showStaggeredList('#staggered-test')
+					    // $('.blackText').addClass('white-text');
+					    // $('.blackText').removeClass('black-text');
+				        Materialize.showStaggeredList('#staggered-test');
 				        Materialize.fadeInImage('#staggered-test2');				        
            }
 			 if(funcion=="m-gallery"){
                  $('.brand-logo > img').attr("src", "imagenes/icono-ale-large-black.svg");
 				 $('.activa-animacion-1').addClass('element-1-change2');
 				 $('.activa-animacion-2').addClass('element-2-change2');
-				 $('.blackText').addClass('black-text');
-				 $('.blackText').removeClass('white-text');
+                 $('.blackText').removeClass('white-text');
+                 $('.blackText').addClass('black-text');
+                 $('.whiteText').removeClass('white-text');
+                 $('.whiteText').addClass('black-text');
+
 			 }else{
                  $('.brand-logo > img').attr("src", "imagenes/icono-ale-large.svg");
 				 $('.activa-animacion-1').removeClass('element-1-change2');
 				 $('.activa-animacion-2').removeClass('element-2-change2');
-				 $('.blackText').removeClass('black-text');
-				 $('.blackText').addClass('white-text');
+
 			 }
 
             if(funcion!="m-sistemas-encabezado" && funcion!="m-sistemas-contenido" && funcion!="m-sistemas-tablas"){
