@@ -22,7 +22,7 @@
                           { 'swipeable': true }
                       );
 	                 $('.materialboxed').materialbox();
-	                 $('.collapsible').collapsible();
+	                 $('.scrollspy').scrollSpy();
 
 	                             			   
 	                 ejecutarAfter(id);
