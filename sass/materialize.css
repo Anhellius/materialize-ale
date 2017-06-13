@@ -6804,7 +6804,14 @@ nav {
   -webkit-clip-path: circle(50%, 50%, 50%); */
   z-index: -1;
   transition: all .5s ease;
-  background-color: #eceff1; }
+  background-color: #eceff1;
+  background-image: url("../imagenes/background-multi-1-blur.jpg");
+  opacity: 1;
+  backdrop-filter: blur(5px); }
+  .element-2-change2.tinted {
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../imagenes/background-multi-1-blur.jpg); }
+  .element-2-change2.shaded {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../imagenes/background-multi-1-blur.jpg); }
 
 .scrollText {
   height: 470px;

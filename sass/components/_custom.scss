@@ -276,6 +276,15 @@ nav {
   z-index: -1;
   transition: all .5s ease;
   background-color: #eceff1;
+  background-image: url("../imagenes/background-multi-1-blur.jpg");
+  opacity: 1;
+  backdrop-filter: blur(5px);
+  &.tinted{
+    background-image:(linear-gradient(0deg, rgba(255,255,255,.2),rgba(255,255,255,.2)),url(../imagenes/background-multi-1-blur.jpg));
+  }
+  &.shaded{
+    background-image:(linear-gradient(0deg, rgba(0,0,0,.2),rgba(0,0,0,.2)),url(../imagenes/background-multi-1-blur.jpg));
+  }
 }
 
 

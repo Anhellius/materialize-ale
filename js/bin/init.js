@@ -68,8 +68,8 @@
            }
 			 if(funcion=="m-gallery"){
                  $('.brand-logo > img').attr("src", "imagenes/icono-ale-large-black.svg");
-				 $('.activa-animacion-1').addClass('element-1-change2');
-				 $('.activa-animacion-2').addClass('element-2-change2');
+				 $('.activa-animacion-1').addClass('element-1-change2 tinted shaded');
+				 $('.activa-animacion-2').addClass('element-2-change2 tinted shaded');
                  $('.blackText').removeClass('white-text');
                  $('.blackText').addClass('black-text');
                  $('.whiteText').removeClass('white-text');
@@ -77,8 +77,8 @@
 
 			 }else{
                  $('.brand-logo > img').attr("src", "imagenes/icono-ale-large.svg");
-				 $('.activa-animacion-1').removeClass('element-1-change2');
-				 $('.activa-animacion-2').removeClass('element-2-change2');
+				 $('.activa-animacion-1').removeClass('element-1-change2 tinted shaded');
+				 $('.activa-animacion-2').removeClass('element-2-change2 tinted shaded');
 
 			 }
 
