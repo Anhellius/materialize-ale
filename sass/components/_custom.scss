@@ -276,6 +276,9 @@ nav {
   z-index: -1;
   transition: all .5s ease;
   background-color: #eceff1;
+  background-image: url("../imagenes/background-multi-1-blur.jpg");
+  opacity: 1;
+  backdrop-filter: blur(5px);
 }
 
 
