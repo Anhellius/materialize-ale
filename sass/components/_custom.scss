@@ -345,3 +345,21 @@ nav {
     height: 100vh !important;
   }
 }
+
+.parallax-container {
+  height: auto;
+}
+
+.fondo-parallax{
+  background-color: #4d6570;
+  position: absolute;
+  top:0;
+  left:0;
+  width: 90%;
+  height: 300px;
+  margin: 0 5%;
+  z-index: -1;
+  overflow: auto;
+  border-radius: 5px;
+}
+

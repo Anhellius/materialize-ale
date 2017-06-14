@@ -23,7 +23,7 @@
                       );
 	                 $('.materialboxed').materialbox();
 	                 $('.scrollspy').scrollSpy();
-
+	                 $('.parallax').parallax();
 	                             			   
 	                 ejecutarAfter(id);
 	           	 },
