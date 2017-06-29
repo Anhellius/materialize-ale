@@ -8,6 +8,7 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link href="https://use.fontawesome.com/b825156fce.js" rel="stylesheet">
 <link rel="stylesheet" href="sass/materialize.css">
+<link rel="stylesheet" href="sass/aos.css" />
 <!-- <style type="text/css">
 html, body {
     height:100%;
@@ -68,9 +69,11 @@ html, body {
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="https://use.fontawesome.com/b825156fce.js"></script>
 <script src="js/bin/materialize.min.js"></script>
+<script src="js/bin/aos.js"></script>
 <script src="js/bin/init.js"></script>
 <script>
 $( document ).ready(function() {});
+AOS.init();
 $('#m-resume-2').click(function() {
     $('#m-resume-2').addClass('scale-out');
 })

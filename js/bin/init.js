@@ -2,7 +2,6 @@
   $(function(){
     $('.button-collapse').sideNav();
     $('.carousel.carousel-slider').carousel({fullWidth: true});
-
   }); // end of document ready
 })(jQuery); // end of jQuery name space
 
@@ -70,10 +69,10 @@
                  $('.brand-logo > img').attr("src", "imagenes/icono-ale-large-black.svg");
 				 $('.activa-animacion-1').addClass('element-1-change2 tinted shaded');
 				 $('.activa-animacion-2').addClass('element-2-change2 tinted shaded');
-                 $('.blackText').removeClass('white-text');
-                 $('.blackText').addClass('black-text');
-                 $('.whiteText').removeClass('white-text');
-                 $('.whiteText').addClass('black-text');
+				 $('.blackText').addClass('white-text');
+                 $('.blackText').removeClass('black-text');
+                 $('.whiteText').addClass('white-text');
+                 $('.whiteText').removeClass('black-text');
 
 			 }else{
                  $('.brand-logo > img').attr("src", "imagenes/icono-ale-large.svg");
