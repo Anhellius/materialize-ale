@@ -23,7 +23,7 @@
 	                 $('.materialboxed').materialbox();
 	                 $('.scrollspy').scrollSpy();
 	                 $('.parallax').parallax();
-	                             			   
+
 	                 ejecutarAfter(id);
 	           	 },
 				 error: function(data){
@@ -66,6 +66,7 @@
 				        Materialize.fadeInImage('#staggered-test2');				        
            }
 			 if(funcion=="m-gallery"){
+                 $('nav > .nav-wrapper').attr("style", "posistion:sticky !important; top:0");
                  $('.brand-logo > img').attr("src", "imagenes/icono-ale-large-black.svg");
 				 $('.activa-animacion-1').addClass('element-1-change2 tinted shaded');
 				 $('.activa-animacion-2').addClass('element-2-change2 tinted shaded');
