@@ -66,19 +66,28 @@
 				        Materialize.fadeInImage('#staggered-test2');				        
            }
 			 if(funcion=="m-gallery"){
-                 $('nav > .nav-wrapper').attr("style", "posistion:sticky !important; top:0");
+                 $('nav > .nav-wrapper').attr("style", "position:sticky !important; top:0");
+                 $('nav > .nav-wrapper').addClass("background");
+                 $('#paraLayerTop').addClass("layer");
+                 $('nav > .categories-wrapper').attr("style", "position:sticky !important; bottom:0");
+                 $('.nav-header, .nav-full-header').attr("style", "height: initial !important");
                  $('.brand-logo > img').attr("src", "imagenes/icono-ale-large-black.svg");
-				 $('.activa-animacion-1').addClass('element-1-change2 tinted shaded');
-				 $('.activa-animacion-2').addClass('element-2-change2 tinted shaded');
+				 $('.activa-animacion-1').addClass('element-1-change2');
+				 $('.activa-animacion-2').addClass('element-2-change2');
 				 $('.blackText').addClass('white-text');
                  $('.blackText').removeClass('black-text');
                  $('.whiteText').addClass('white-text');
                  $('.whiteText').removeClass('black-text');
 
 			 }else{
+                 $('nav > .nav-wrapper').removeClass("background");
+                 $('#paraLayerTop').removeClass("layer");
                  $('.brand-logo > img').attr("src", "imagenes/icono-ale-large.svg");
-				 $('.activa-animacion-1').removeClass('element-1-change2 tinted shaded');
-				 $('.activa-animacion-2').removeClass('element-2-change2 tinted shaded');
+				 $('.activa-animacion-1').removeClass('element-1-change2');
+				 $('.activa-animacion-2').removeClass('element-2-change2');
+                 $('nav > .nav-wrapper').removeAttr("style", "position:sticky !important; top:0");
+                 $('nav > .categories-wrapper').removeAttr("style", "position:sticky !important; bottom:0");
+                 $('.nav-header, .nav-full-header').removeAttr("style", "height: initial !important");
 
 			 }
 

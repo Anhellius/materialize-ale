@@ -23,7 +23,7 @@ html, body {
 <body>
  
 
-  <nav class="nav-extended nav-full-header  background">
+  <nav class="nav-extended nav-full-header">
 
     <div class="layer">
         <div class="activa-animacion-1 element-1"></div>
@@ -33,13 +33,18 @@ html, body {
       <li><a href="#!">Inglés</a></li>
       <li><a href="#!">Español</a></li>
     </ul>
-    <div class="nav-wrapper container">
+    <div class="nav-wrapper">
+      <div id="paraLayerTop">
+      <div class="container">
+
       <a href="#!" class="brand-logo"><img src="imagenes/icono-ale-large.svg" width="100%" alt=""></a>
       <ul class="right hide-on-med-and-down">
         <li><a class="blackText" id="m-home" href="#home">Inicio</a></li>
         <li><a class="blackText" id="m-contact" href="#contact">Contacto</a></li>
         <li><a class="dropdown-button blackText" href="#!" data-activates="dropdown1">Idioma<i class="material-icons right">arrow_drop_down</i></a></li>
       </ul>
+      </div>
+      </div>
     </div>
     <div class="nav-header" id="mainInclude">
 
@@ -73,7 +78,7 @@ html, body {
 <script src="js/bin/init.js"></script>
 <script>
 $( document ).ready(function() {});
-AOS.init();
+//AOS.refreshHard();
 $('#m-resume-2').click(function() {
     $('#m-resume-2').addClass('scale-out');
 })
