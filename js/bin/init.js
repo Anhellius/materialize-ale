@@ -67,8 +67,11 @@
            }
 			 if(funcion=="m-gallery"){
                  $('nav > .nav-wrapper').attr("style", "position:sticky !important; top:0");
-                 $('nav > .nav-wrapper').addClass("background");
-                 $('#paraLayerTop').addClass("layer");
+                 setTimeout(function(){
+                     $('nav > .nav-wrapper').addClass("background");
+                     $('#paraLayerTop').addClass("layer");
+                 }, 1000);
+
                  $('nav > .categories-wrapper').attr("style", "position:sticky !important; bottom:0");
                  $('.nav-header, .nav-full-header').attr("style", "height: initial !important");
                  $('.brand-logo > img').attr("src", "imagenes/icono-ale-large-black.svg");
